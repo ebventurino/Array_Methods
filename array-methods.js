@@ -251,6 +251,7 @@ const customers = {
 
 var findTheEmails = customers.customers;
 let namesArray = []
+
 for(let i = 0; i < findTheEmails.length;i++) {
   console.log(findTheEmails[i].contacts.email, "findTheEmails")
   namesArray.push(findTheEmails[i].contacts.email);
@@ -258,6 +259,8 @@ for(let i = 0; i < findTheEmails.length;i++) {
 
 console.log(namesArray)
 
-let emailsArr = findTheEmails.map( function(oneEmailAtATime){
- return (customers.email)
+let emailsArr = findTheEmails.map((allOfTheEmails) => {
+  console.log(allOfTheEmails.contacts.email)
+  return allOfTheEmails
 })
+
